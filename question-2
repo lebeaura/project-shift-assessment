@@ -1,0 +1,12 @@
+const bands = ['Kiss', 'Aerosmith', 'ACDC', 'Led Zepplim', 'Nickleback'];
+
+var x;
+
+var text;
+
+for (x=0; x < bands.length; x++) {
+    
+    text = "I love " + bands[x];
+    
+    print(text);
+};

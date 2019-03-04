@@ -1,1 +1,30 @@
+const array = ['a', 'b', 'c', 'd', 'c', 'b', 'b', 'c', 'a', 'e', 'b', 'e'];
 
+var x, y;
+var most, least;
+var max = 0, min = array.length;
+
+for(x = 0; x < array.length; x++){
+    
+    var temp = 0;
+    
+    for(y = 0; y < array.length; y++){
+     
+        if(array[x] == array[y]){
+            
+            temp++;            
+        }
+    }
+    if(temp > max){
+        max = temp;
+        most = array[x];
+            
+        }
+    if(temp < min){
+        min = temp;
+        least = array[x];
+    }
+    
+}
+
+print("The most frequent item is:", most, "it appears", max, "times. The least frequent item is:", least, "it appears", min, "times.")

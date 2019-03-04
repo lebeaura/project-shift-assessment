@@ -1,0 +1,11 @@
+const array = [34, 203, 16, 46, 34, 432, 342, 124, 33, 188, 12];
+
+var x;
+var total = 0; 
+
+
+for (x=0; x < array.length; x++) {
+    
+    total += array[x];
+    }
+print (total / x);
